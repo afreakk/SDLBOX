@@ -22,7 +22,7 @@ void CannonBalls::updateEvent()
         SDL_GetMouseState(&x,&y);
         float xx= static_cast<float>(x)+92.0f/2.0f+xScale/2.0f;
         float yy= static_cast<float>(y);
-        balls.push_back(Object(world,xx,yy,xScale,yScale,gRenderer,Object::cube,false,20.0f,20ŕ.0f));
+        balls.push_back(Object(world,xx,yy,xScale,yScale,gRenderer,Object::cube,false,20.0f,20.0f));
         balls[balls.size()-1].setTexture(texture);
         balls[balls.size()-1].addForce(force);
         noRepeat=false;
